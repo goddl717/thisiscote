@@ -12,10 +12,9 @@ sy,sx, d = map(int,input().split())
 for i in range(n) :
      arr.append(list(map(int,input().split())))
 
-
 cy,cx = sy,sx 
 cnt = 1 
-
+arr[cy][cx] = 1
 while(True):
     # 현재 방향을 기준으로 돌아야 한다.
     for i in range(d+1, d+6):
